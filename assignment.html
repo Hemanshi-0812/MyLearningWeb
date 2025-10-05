@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment</title>
+  <link rel="stylesheet" href="assiabout.css" />
+</head>
+
+<body>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const loggedIn = localStorage.getItem("isLoggedIn");
+      if (loggedIn !== "true") {
+        alert("Please login to access this page.");
+        window.location.href = "login.html";
+      }
+    });
+  </script>
+
+  <header>
+    <div class="logo-title">
+      <a href="home.html">
+        <img src="https://mir-s3-cdn-cf.behance.net/projects/404/b081bc218276467.679eea96ad67c.png" 
+             alt="Site Logo" class="logo" />
+      </a>
+      <h1>My Learning Web</h1>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="html.html">HTML</a>
+      <a href="css.html">CSS</a>
+      <a href="js.html">JavaScript</a>
+      <a href="assignment.html">Assignment</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Assignment</h1><br><br>
+
+    <section>
+      <h4>🌐 1. Personal Portfolio Website</h4>
+      <p>Tech used: HTML, CSS, JavaScript</p>
+      <p>Features:</p>
+      <ul>
+        <li>Home, About, Projects, Contact sections</li>
+        <li>Interactive elements like tooltips or animations with JavaScript</li>
+        <li>A contact form with basic validation</li>
+        <li><strong>Bonus:</strong> Add a dynamic theme switcher (light/dark mode)!</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <h4>🎮 2. Rock–Paper–Scissors Game</h4>
+      <p>Tech used: HTML, CSS, JavaScript</p>
+      <p>Features:</p>
+      <ul>
+        <li>Buttons for “Rock”, “Paper”, and “Scissors”</li>
+        <li>JavaScript logic to determine the winner</li>
+        <li>Scoreboard that updates after each round</li>
+        <li><strong>Bonus:</strong> Track past games or animate the choices 🎉</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <h4>🎨 3. Interactive Quiz App</h4>
+      <p>Tech used: HTML, CSS, JavaScript</p>
+      <p>Features:</p>
+      <ul>
+        <li>Use JavaScript to build and shuffle quiz questions</li>
+        <li>Use event listeners for answer selection</li>
+        <li>Score calculation and dynamic result display</li>
+        <li><strong>Bonus:</strong> Add a timer or save high scores using localStorage</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Contact Us<br>
+      Email: support@mylerning.com<br>
+      Phone: +123-456-7890
+    </p>
+    <p>&copy; 2025 My Learning Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

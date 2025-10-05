@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+
+<body>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const loggedIn = localStorage.getItem("isLoggedIn");
+      if (loggedIn !== "true") {
+        alert("Please login to access this page.");
+        window.location.href = "login.html";
+      }
+    });
+  </script>
+
+  <header>
+    <div class="logo-title">
+      <a href="home.html">
+        <img
+          src="https://mir-s3-cdn-cf.behance.net/projects/404/b081bc218276467.679eea96ad67c.png"
+          alt="Site Logo"
+          class="logo"
+        />
+      </a>
+      <h1>My Learning Web</h1>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="html.html">HTML</a>
+      <a href="css.html">CSS</a>
+      <a href="js.html">JavaScript</a>
+      <a href="assignment.html">Assignment</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1>Quiz Time!</h1>
+        <div class="timer">Time left: 90 Seconds</div>
+      </div>
+
+      <h2 class="question">1. What does HTML stand for?</h2>
+      <div class="options" id="101">
+        <label class="option"><input type="radio" name="q1" /> HyperText Markup Language</label>
+        <label class="option"><input type="radio" name="q1" /> HyperText Machine Language</label>
+        <label class="option"><input type="radio" name="q1" /> HyperTool Markup Language</label>
+        <label class="option"><input type="radio" name="q1" /> HyperTransfer Markup Language</label>
+      </div>
+
+      <h2 class="question" id="102">2. What property is used to change text color in CSS?</h2>
+      <div class="options">
+        <label class="option"><input type="radio" name="q2" /> font-color</label>
+        <label class="option"><input type="radio" name="q2" /> color</label>
+        <label class="option"><input type="radio" name="q2" /> text-color</label>
+        <label class="option"><input type="radio" name="q2" /> background-color</label>
+      </div>
+
+      <h2 class="question" id="103">3. Which tag is used to link JavaScript in HTML?</h2>
+      <div class="options">
+        <label class="option"><input type="radio" name="q3" /> &lt;js&gt;</label>
+        <label class="option"><input type="radio" name="q3" /> &lt;link&gt;</label>
+        <label class="option"><input type="radio" name="q3" /> &lt;script&gt;</label>
+        <label class="option"><input type="radio" name="q3" /> &lt;style&gt;</label>
+      </div>
+
+      <h2 class="question" id="104">4. Which HTML tag is used to create a hyperlink?</h2>
+      <div class="options">
+        <label class="option"><input type="radio" name="q4" /> &lt;link&gt;</label>
+        <label class="option"><input type="radio" name="q4" /> &lt;a&gt;</label>
+        <label class="option"><input type="radio" name="q4" /> &lt;href&gt;</label>
+        <label class="option"><input type="radio" name="q4" /> &lt;nav&gt;</label>
+      </div>
+
+      <h2 class="question" id="105">5. Which method displays a popup box in JavaScript?</h2>
+      <div class="options">
+        <label class="option"><input type="radio" name="q5" /> popup()</label>
+        <label class="option"><input type="radio" name="q5" /> show()</label>
+        <label class="option"><input type="radio" name="q5" /> alert()</label>
+        <label class="option"><input type="radio" name="q5" /> display()</label>
+      </div>
+
+      <a class="btn" href="result.html">Submit Quiz</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      Contact Us<br />
+      Email: support@mylerning.com<br />
+      Phone: +123-456-7890
+    </p>
+    <p>&copy; 2025 My Learning Website. All rights reserved.</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

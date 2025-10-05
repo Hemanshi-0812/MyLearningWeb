@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+ <link rel="stylesheet" href="assiabout.css">
+ <style>
+  .faq-que{
+        cursor: pointer;
+            border: 1px solid rgb(106, 214, 209);
+            border-radius: 8px;
+            background-color: rgb(178, 236, 233);
+             padding-bottom: 10px;
+             padding-left: 5px;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .faq-ans{
+            display: none;
+            border: 2px solid rgb(106, 214, 209);
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+ </style>
+</head>
+<body>
+  <header>
+  <div class="logo-title">
+    <a href="home.html">
+      <img src="https://mir-s3-cdn-cf.behance.net/projects/404/b081bc218276467.679eea96ad67c.png" alt="Site Logo" class="logo">
+    </a>
+    <h1>My Learning Web</h1>
+  </div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="js.html">JavaScript</a>
+    <a href="assignment.html">Assignment</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="about.html">About</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+  <main>
+    <h1>About My Learning Web</h1><br><br>
+    <section>
+      <div class="faq-que">
+      <h2>My Learning Web</h2>
+      </div>
+      <div class="faq-ans">
+      <h4>The Frontend Web Developer Site</h4>
+      <p>Join millions of learners worldwide in mastering web development through interactive tutorials and hands-on practice.</p>
+    </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <div class="faq-que">
+      <h2>What is My Learning Web?</h2>
+      </div>
+      <div class="faq-ans">
+      <p>We create simplified and interactive learning experiences.</p>
+      <p>Learning frontend web development should be easy to understand and available for everyone, everywhere!</p>
+      <p>My Learning Web is a school for frontend web developers, covering key aspects of frontend web development:</p>
+      <ul>
+        <li><a href="html.html">HTML Tutorial</a></li>
+        <li><a href="css.html">CSS Tutorial</a></li>
+        <li><a href="js.html">JavaScript Tutorial</a></li>
+        <li><a href="learn.html">Learn More</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <div class="faq-que">
+      <h2>You Can Help</h2></div>
+      <div class="faq-ans">
+      <p>Many people work very hard to ensure My Learning Web remains useful, updated, and interesting.</p>
+      <p>If you find an error or a broken link, please tell us about it.</p>
+      <p>You can send us a message using the "CONTACT US" link at the bottom of any page.</p>
+    </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <div class="faq-que">
+      <h2>Contact Sales</h2>
+      </div>
+      <div class="faq-ans">
+      <p>If you want to use My Learning Web services as an educational institution, team, or enterprise, send us an e-mail:</p>
+      <p>Email: my@mylerning.com<br>Phone: +123-456-7890</p>
+    </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <div class="faq-que">
+      <h2>Report an Error</h2>  </div>
+      <div class="faq-ans">
+      <p>If you want to report an error or make a suggestion, send us an e-mail:</p>
+      <p>Email: support@mylerning.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Learning Website. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+document.querySelectorAll(".faq-que").forEach(q => {
+    q.addEventListener("click", () => {
+        const answer = q.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+    });
+});
+
+  </script>
+</body>
+</html>

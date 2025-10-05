@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <header>
+  <div class="logo-title">
+    <a href="home.html">
+      <img src="https://mir-s3-cdn-cf.behance.net/projects/404/b081bc218276467.679eea96ad67c.png" alt="Site Logo" class="logo">
+    </a>
+    <h1>My Learning Web</h1>
+  </div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="js.html">JavaScript</a>
+    <a href="assignment.html">Assignment</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="about.html">About</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+<main>
+  <div class="page">
+    <form id="loginForm" class="formlogin" method="post">
+      <h2>Login</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter Username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter Password" required>
+
+      <a href="forgot.html">Forgot your password?</a>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+</main>
+
+
+  <footer>
+    <p>Contact Us<br>
+      Email: support@mylerning.com <br>
+      Phone: +123-456-7890</p>
+    <p>&copy; 2025 My Learning Website. All rights reserved.</p>
+  </footer>
+
+  <script src="login.js">
+    localStorage.setItem("isLoggedIn","true");
+    window.location.href = "home.html";
+  </script>
+</body>
+</html>
